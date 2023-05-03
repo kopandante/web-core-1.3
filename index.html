@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Core 1.3</title>
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="main-menu menu">
+        <a class="menu__item icon-burger" href="#">Меню</a>
+        <div class="main-menu__divider"></div>
+        <a class="logo" href="#">На главную</a>
+        <div class="gap"></div>
+        <a class="menu__item icon-call" href="#">Сделать звонок</a>
+        <a class="menu__item icon-chat" href="#">Написать сообщение</a>
+        <a class="menu__item icon-profile" href="">Профиль пользователя</a>
+        <div class="main-menu__divider"></div>
+        <a class="menu__item icon-repair" href="#">Оставить заявку</a>
+        <a class="menu__item icon-check-status" href="#">Статус ремонта</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="side-menu menu">
+            <h1 class="page-title">Услуги и сервисы</h1>
+            <div class="gap"></div>
+            <a href="#">Оставить заявку</a>
+            <a href="#" class="menu__item icon-repair"></a>
+            <a href="#">Статус ремонта</a>
+            <a href="#" class="menu__item icon-check-status"></a>
+        </div>
+        <div class="tabs">
+            <section id="devices" class="tabs__item">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab tabs__tab_active" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        Ремонтируемые устройства
+                    </article>
+                </div>
+            </section>
+            <section id="prices" class="tabs__item">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab tabs-nav__item_active" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        Цены на услуги
+                    </article>
+                </div>
+            </section>
+            <section id="addresses" class="tabs__item">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab tabs__tab_active" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        Адреса сервисных центров
+                    </article>
+                </div>
+            </section>
+            <section id="special-offers" class="tabs__item">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab tabs__tab_active" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        Специальные цены
+                    </article>
+                </div>
+            </section>
+            <section id="reviews" class="tabs__item">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab tabs__tab_active" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        Отзывы
+                    </article>
+                </div>
+            </section>
+            <section id="brands" class="tabs__item tabs-content__item_active">
+                <nav class="tabs__nav">
+                    <a class="tabs__tab tabs__tab_active" href="#brands">Ремонтируемые&nbsp;бренды</a>
+                    <a class="tabs__tab" href="#devices">Ремонтируемые&nbsp;устройства</a>
+                    <a class="tabs__tab" href="#prices">Цены&nbsp;на&nbsp;услуги</a>
+                    <a class="tabs__tab" href="#addresses">Адреса&nbsp;сервисных&nbsp;центров</a>
+                    <a class="tabs__tab" href="#special-offers">Специальные&nbsp;цены</a>
+                    <a class="tabs__tab" href="#reviews">Отзывы</a>
+                </nav>
+                <div class="tabs__content">
+                    <article>
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                        <a class="icon-expand">Читать далее</a>
+                    </article>
+                    <figure>
+                        <img src="assets/img/_MG_3223.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+</body>
+</html>

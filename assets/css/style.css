@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    background-color: #F8F8F8;
+}
+
+main {
+    container: main / inline-size;
+    background-color: #F8F8F8;
+}
+
+header {
+    container: header / inline-size;
+    background-color: white;
+}
+
+
+/* служебные стили */
+
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+
+/* меню */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    padding: 1.125rem 1rem;
+}
+
+.main-menu__divider {
+    width: 0.125rem;
+    height: 2rem;
+    background-color: #EAEAEA;
+    border-radius: 0.0625rem;
+}
+
+.side-menu {
+    padding: 1.5rem 2rem 1rem;
+}
+
+.side-menu > a {
+    text-decoration: none;
+    color: #1B1C21;
+    display: none;
+}
+
+.side-menu > a:not(.menu__item) {
+    margin-right: 0.5rem;
+}
+
+.side-menu .icon-repair {
+    margin-right: 2rem;
+}
+
+.page-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+.page-title::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 0.25rem;
+    height: 2.5rem;
+    background-color: #41F6D7;
+    left: -2rem;
+    top: 0.5rem;
+}
+
+
+/* табы */
+
+.tabs__nav {
+    display: flex;
+    gap: 0.2rem 0.5rem;
+    margin-left: 2rem;
+    width: calc(100vw - 2rem);
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+
+.tabs__tab {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #7E7E82;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.tabs__tab:is(:focus, :active, :hover, .tabs__tab_active) {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.tabs__content {
+    display: grid;
+    padding: 1rem 0;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    font-size: 0.875rem;
+}
+.tabs__content > article {
+    padding: 0 2rem ;
+}
+.tabs__item { display: none }
+.tabs__item:target { display: block; }
+.tabs__item:last-child {display: block }
+.tabs__item:target ~ .tabs__item:last-child { display: none; }
+
+.tabs__content p {
+    margin-bottom: 1rem;
+}
+.tabs__content img {
+    width: 100%;
+}
+
+
+@container header (width <= 768px) {
+    .icon-call, .icon-chat, .icon-profile,
+    .main-menu__divider:first-of-type {
+        display: none;
+    }
+}
+
+@container header (width >= 1120px) {
+    .main-menu { display: none; }
+}
+
+@container main (width >= 768px) {
+    .tabs__content {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0;
+    }
+    .tabs__content > figure {
+        padding: 0 2rem;
+    }
+}
+
+@container main (width >= 1120px) {
+    .tabs__nav {
+        width: calc(100vw - 4rem);
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+    .side-menu > a { display: inline-block; }
+}
