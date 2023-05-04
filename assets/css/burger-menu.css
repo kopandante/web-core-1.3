@@ -39,7 +39,8 @@
     content: "";
     background-image: url("data:image/svg+xml,%3Csvg width='4' height='32' viewBox='0 0 4 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V32C2.20914 32 4 30.2091 4 28V4Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
-
+    animation-name: list-animation;
+    animation-duration: 0.8s;
 }
 
 .burger-menu__menu a,
@@ -60,4 +61,10 @@
 
 a.active {
     color: #7E7E82;
+}
+
+@keyframes list-animation {
+    0% { padding-left: 1.5rem; }
+    50% { padding-left: 2rem; }
+    100% { padding-left: 1.5rem; }
 }
