@@ -1,7 +1,16 @@
 @keyframes icon-animation {
-    0% { transform: rotate(0); }
-    75% { transform: rotate(15deg); }
-    100% { transform: rotate(0); }
+    0% {
+        transform: rotate(0);
+        background-color: #FF3E79;
+    }
+    75% {
+        transform: rotate(90deg);
+        background-color: #bd0039;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: #FF3E79;
+    }
 }
 
 .logo {
@@ -24,7 +33,7 @@
 
 .menu__item:hover {
     animation-name: icon-animation;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
 }
 
 .menu__item:not(:last-of-type), .main-menu__divider {

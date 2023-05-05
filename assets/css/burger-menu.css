@@ -65,6 +65,8 @@ a.active {
 
 @keyframes list-animation {
     0% { padding-left: 1.5rem; }
-    50% { padding-left: 2rem; }
+    50% { padding-left: 2rem;
+        transform: rotate(3deg);
+    }
     100% { padding-left: 1.5rem; }
 }
